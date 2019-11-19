@@ -1,0 +1,23 @@
+## Rotation
+CASE
+WHEN raster_value('flow_direction',1,$geometry) = 1 THEN 90
+WHEN raster_value('flow_direction',1,$geometry) = 2 THEN 45
+WHEN raster_value('flow_direction',1,$geometry) = 3 THEN 0
+WHEN raster_value('flow_direction',1,$geometry) = 4 THEN 315
+WHEN raster_value('flow_direction',1,$geometry) = 5 THEN 270
+WHEN raster_value('flow_direction',1,$geometry) = 6 THEN 225
+WHEN raster_value('flow_direction',1,$geometry) = 7 THEN 180
+ELSE 135
+END
+
+## Color
+CASE
+WHEN raster_value('flow_direction',1,$geometry) = 1 THEN color_rgb(0,153,0)
+WHEN raster_value('flow_direction',1,$geometry) = 2 THEN color_rgb(0,204,204)
+WHEN raster_value('flow_direction',1,$geometry) = 3 THEN color_rgb(0,0,255)
+WHEN raster_value('flow_direction',1,$geometry) = 4 THEN color_rgb(153,0,76)
+WHEN raster_value('flow_direction',1,$geometry) = 5 THEN color_rgb(102,178,255)
+WHEN raster_value('flow_direction',1,$geometry) = 6 THEN color_rgb(160,160,160)
+WHEN raster_value('flow_direction',1,$geometry) = 7 THEN color_rgb(255,204,153)
+ELSE color_rgb(255,255,51)
+END

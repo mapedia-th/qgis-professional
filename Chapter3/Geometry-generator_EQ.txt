@@ -1,0 +1,27 @@
+------------------------------------------
+
+centroid($geometry)
+
+------------------------------------------
+
+make_line( 
+	  $geometry,
+	  geometry(get_feature('airports','abbrev','DMK')) 
+	)
+
+------------------------------------------
+
+smooth( 
+	make_line( 
+	  $geometry,
+	  make_point( $x - 0.25 , $y + 2),
+	  geometry(get_feature('airports','abbrev','DMK')) 
+	),   
+iterations:=4, 
+offset:=0.25)
+
+--------------------------------------------
+
+buffer($geometry,2000)
+
+--------------------------------------------
