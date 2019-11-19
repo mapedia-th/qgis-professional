@@ -1,0 +1,25 @@
+Tile Map Service (TMS)
+
+Google Maps: https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}
+
+Google Roads: https://mt1.google.com/vt/lyrs=h&x={x}&y={y}&z={z}
+
+Google Satellite: https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}
+
+Google Terrain: https://mt1.google.com/vt/lyrs=t&x={x}&y={y}&z={z}
+
+Google Hybrid: https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}
+
+OpenStreetMap: http://tile.openstreetmap.org/{z}/{x}/{y}.png
+
+Stamen Toner: http://tile.stamen.com/toner/{z}/{x}/{y}.png
+
+Stamen Toner Light: http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png
+
+Stamen Terrain: http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg
+
+Stamen Watercolor: http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg
+
+CartoDb Positron: http://basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png
+
+CartoDb Dark Matter: http://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png

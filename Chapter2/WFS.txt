@@ -1,0 +1,2 @@
+Name = GeoServer-WFS
+URL= http://119.59.125.189/mapservice/wfs?version=2.0.0
